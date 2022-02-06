@@ -4,9 +4,9 @@ pipeline{
         stage("Build")
         {
             agent { label "myimage" }
-           /* options{
+           options{
                 skipDefaultCheckout()
-            }*/
+            }
             steps{
                 echo "Hello World"
             }
