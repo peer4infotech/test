@@ -1,5 +1,5 @@
 pipeline{
-    '''agent { label "myimage" }'''
+   // agent { label "myimage" }
        agent none
     stages{
         stage("Build")
