@@ -1,12 +1,12 @@
 pipeline{
-    agent { label "myimage"}
+    agent { label "myimage" }
     stages{
         stage("Build")
         {
             agent { label "myimage" }
-           /* options{
+           options{
                 skipDefaultCheckout()
-            }*/
+            }
             steps{
                 echo "Hello World"
             }
