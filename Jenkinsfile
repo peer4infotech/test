@@ -1,10 +1,11 @@
 pipeline{
-   agent{ label "myimage" }
+   agent none
   //agent none
     stages{
         stage("Build Dev")
         {
             //agent { label "myimage" }
+            agent{ label "myimage" }
         //    options{
         //         skipDefaultCheckout()
         //     }
@@ -20,7 +21,9 @@ pipeline{
 
         }
         stage("Build Main"){
+            agent{ label "myimage" }
             when{
+                
                 branch 'main'
             }
             steps{
