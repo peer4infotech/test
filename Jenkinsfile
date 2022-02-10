@@ -16,7 +16,7 @@ pipeline{
         //         echo "Hello World"
         //     }
                 when{
-                    tag "4.0"
+                    tag "release-to-*"
                 }
                 steps{
                     echo "Hello from pipeline_git_2 branch. it is tag 4.0 build"
