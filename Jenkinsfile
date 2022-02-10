@@ -16,10 +16,10 @@ pipeline{
         //         echo "Hello World"
         //     }
                 when{
-                    branch 'pipeline_git_2'
+                    buildingTag()
                 }
                 steps{
-                    echo "Hello from pipeline_git_2 branch"
+                    echo "Hello from pipeline_git_2 branch. it is tag build"
                 }
 
         }
