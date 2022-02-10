@@ -27,10 +27,10 @@ pipeline{
             // agent{ label "myimage" }
             when{
                 
-                branch 'main'
+                tag "3.0"
             }
             steps{
-                echo "Hello from Main branch"
+                echo "Hello from tag 3.0"
             }
         }
     }
