@@ -16,22 +16,12 @@ pipeline{
         //         echo "Hello World"
         //     }
                 when{
-                    buildingTag()
+                    tag "4.0"
                 }
                 steps{
-                    echo "Hello from pipeline_git_2 branch. it is tag build"
+                    echo "Hello from pipeline_git_2 branch. it is tag 4.0 build"
                 }
 
-        }
-        stage("Build Main"){
-            // agent{ label "myimage" }
-            when{
-                
-                tag "3.0"
-            }
-            steps{
-                echo "Hello from tag 3.0"
-            }
         }
     }
 }
