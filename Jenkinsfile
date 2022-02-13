@@ -23,5 +23,14 @@ pipeline{
                 }
 
         }
+
+        stage("Check_Commit_Message") {
+            when {
+                changelog ".*jira.*"
+            }
+            steps {
+                echo "It is valid Jira"
+            }
+        }
     }
 }
