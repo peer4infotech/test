@@ -1,7 +1,7 @@
 pipeline{
     agent none
     options {
-        skipDefaultCheckOut()
+        skipDefaultCheckout()
         timestamps()
         overrideIndexTriggers(true)
     }
