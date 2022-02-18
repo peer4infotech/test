@@ -3,7 +3,7 @@ pipeline {
     options{
         skipStagesAfterUnstable()
         checkoutToSubdirectory("test")
-        skipDefaultCheckout()
+        /*skipDefaultCheckout()*/
     }
     stages{
         stage("Build"){
