@@ -1,8 +1,8 @@
-pipeline {
+pipeline{
     agent { label 'slave1' }
-    options {
+    /*options {
         skipDefaultCheckOut()
-    }
+    }*/
     stages{
         stage("Build"){
             steps{
