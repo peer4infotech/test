@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    options{
+        skipStagesAfterUnstable()
+        checkoutToSubdirectory("test")
+        skipDefaultCheckout()
+    }
+    stages{
+        stage("Build"){
+            steps {
+                echo "Build in progress"
+                sleep 3
+                /*currentBuild.result="UNSTABLE"*/
+            }
+        }
+        stage("Depoy"){
+            steps{
+                echo "Deploying"
+                sleep 1
+                echo "Deployment completed"
+            }
+        }
+    }
+}
