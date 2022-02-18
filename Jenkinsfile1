@@ -1,12 +1,14 @@
 pipeline{
-    agent { label 'slave1' }
-    /*options {
+    agent none
+    options {
         skipDefaultCheckOut()
-    }*/
-    stages{
+        timestamps()
+        overrideIndexTrigger(true)
+    }
+    stages {
         stage("Build"){
             steps{
-                echo "Hello World"
+                echo "HelloWorld"
             }
         }
     }
