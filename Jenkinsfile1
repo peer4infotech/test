@@ -3,7 +3,7 @@ pipeline{
     options {
         skipDefaultCheckout()
         timestamps()
-        overrideIndexTriggers(true)
+        /*overrideIndexTriggers(true)*/
     }
     stages {
         stage("Build"){
