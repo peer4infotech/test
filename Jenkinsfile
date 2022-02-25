@@ -3,7 +3,6 @@ node{
         stage('Build from pipeline_git_3'){
             echo "Build is triggered"
             sh 'env'
-            echo $env
         }
     }
 
