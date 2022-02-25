@@ -5,6 +5,7 @@ node{
             sh 'env'
             //test1
             //test2
+            //test3
         }
     }
 
