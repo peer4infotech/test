@@ -4,7 +4,7 @@ node{
             echo "Build is triggered"
             sh 'env'
             //test1
-            //test
+            //test2
         }
     }
 
