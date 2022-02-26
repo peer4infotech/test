@@ -15,7 +15,7 @@ node{
             echo "Pull requet is not found"
             //test1
             //test2
-            //test31
+            //test31s
         } 
     }
 }
